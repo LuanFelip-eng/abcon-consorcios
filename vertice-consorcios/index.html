@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vértice Consórcios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+<header id="navbar" class="navbar">
+  <div class="container nav-inner">
+    <button class="brand" data-scroll="inicio">
+      <img src="/logo.png" alt="Logo" class="brand-logo">
+      <span class="brand-name">Abcon <b>Investimentos</b></span>
+    </button>
+    <nav class="desktop-nav">
+      <button data-scroll="inicio">Início</button>
+      <button data-scroll="quem-somos">Quem Somos</button>
+      <button data-scroll="como-funciona">Como Funciona</button>
+      <button data-scroll="simulacao">Simulação</button>
+      <button data-scroll="contato">Contato</button>
+    </nav>
+    <button class="login desktop-only">Entrar</button>
+    <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <button data-scroll="inicio">Início</button>
+    <button data-scroll="quem-somos">Quem Somos</button>
+    <button data-scroll="como-funciona">Como Funciona</button>
+    <button data-scroll="simulacao">Simulação</button>
+    <button data-scroll="contato">Contato</button>
+    <button class="login">Entrar</button>
+  </div>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="reveal"><span class="eyebrow gold">CONSÓRCIO INTELIGENTE</span></div>
+      <div class="reveal delay-1">
+        <h1>Conquiste seu patrimônio<br> sem pagar <span>um centavo</span> de juros.</h1>
+      </div>
+      <div class="reveal delay-2">
+        <p class="hero-text">Planeje a compra do seu imóvel, veículo ou moto com parcelas que cabem no bolso. Faça uma simulação em poucos segundos e descubra o caminho mais inteligente até a contemplação.</p>
+      </div>
+      <div class="reveal delay-3 actions">
+        <button class="btn btn-gold" data-scroll="simulacao">Fazer Simulação <span>→</span></button>
+        <button class="btn btn-outline">Falar com Consultor</button>
+      </div>
+      <div class="reveal delay-4 stats-mini">
+        <div><strong>10 anos</strong><small>de experiência</small></div>
+        <div><strong>+500</strong><small>clientes atendidos</small></div>
+        <div><strong>98%</strong><small>de satisfação</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="ring-wrap float"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div><i class="node gold-node"></i><i class="node sky-node"></i></div>
+      <div class="hero-home pulse">⌂</div>
+      <div class="floating-card card-top float-sm"><small>Parcela a partir de</small><strong>R$ 389/mês</strong></div>
+      <div class="floating-card card-bottom float"><span>✓</span><div><small>Aprovação</small><strong>sem consulta ao SPC</strong></div></div>
+    </div>
+  </div>
+  <div class="wave"></div>
+</section>
+
+<section id="simulacao" class="section mist">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow blue">SIMULAÇÃO GRATUITA</span>
+      <h2>Quanto cabe no seu planejamento?</h2>
+      <p>Escolha o tipo de bem, ajuste valor e prazo — em segundos você vê uma estimativa da sua parcela.</p>
+    </div>
+    <div class="sim-card reveal">
+      <div id="types" class="types"></div>
+      <div class="sim-grid">
+        <div>
+          <div class="label-row"><label>Valor desejado</label><strong id="valueDisplay"></strong></div>
+          <input id="valueRange" class="range" type="range">
+          <div class="range-labels"><span id="minDisplay"></span><span id="maxDisplay"></span></div>
+        </div>
+        <div>
+          <label class="block-label">Prazo</label>
+          <div id="terms" class="terms"></div>
+        </div>
+      </div>
+      <button id="simulateBtn" class="btn btn-navy">Simular Agora <span>→</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="quem-somos" class="section">
+  <div class="container two-col">
+    <div class="reveal">
+      <span class="eyebrow blue">QUEM SOMOS</span>
+      <h2>Estratégia financeira que existe para o seu plano dar certo.</h2>
+      <p>Somos uma administradora de consórcios dedicada a transformar sonhos em planejamento real. Unimos tecnologia, consultoria humana e transparência para conduzir cada grupo até a contemplação com previsibilidade — sem juros, sem surpresas.</p>
+      <p>Nossa equipe acompanha cada cliente desde a simulação até a entrega das chaves, do carro ou da moto, com atendimento próximo e decisões guiadas por dados.</p>
+      <div class="about-stats">
+        <div><b>+500</b><small>clientes atendidos</small></div>
+        <div><b>+R$ 50M</b><small>em créditos liberados</small></div>
+        <div><b>98%</b><small>de satisfação</small></div>
+        <div><b>10 anos</b><small>de experiência</small></div>
+      </div>
+    </div>
+    <div class="about-art reveal">
+      <div class="ring-wrap dark"><div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div></div>
+      <div class="commitment"><span>♢</span><b>Compromisso<br>com resultado</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" class="section mist">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow blue">COMO FUNCIONA</span>
+      <h2>Do plano à conquista, em seis passos claros</h2>
+    </div>
+    <div id="steps" class="steps"></div>
+  </div>
+</section>
+
+<section class="section benefits">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow gold">BENEFÍCIOS</span>
+      <h2>Vantagens pensadas para o seu bolso</h2>
+    </div>
+    <div id="benefits" class="benefits-grid"></div>
+  </div>
+</section>
+
+<section class="section testimonials">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow blue">DEPOIMENTOS</span>
+      <h2>Quem já conquistou, confirma</h2>
+    </div>
+    <div id="testimonial" class="testimonial reveal"></div>
+    <div id="dots" class="dots"></div>
+  </div>
+</section>
+
+<section class="section mist">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow blue">DÚVIDAS FREQUENTES</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div id="faq" class="faq reveal"></div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container narrow center">
+    <h2>Está pronto para conquistar seu patrimônio?</h2>
+    <p>Faça sua simulação agora e descubra, sem compromisso, o plano ideal para o seu momento.</p>
+    <button class="btn btn-gold" data-scroll="simulacao">Quero Fazer Minha Simulação →</button>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark"><span></span></span><b>Vértice Consórcios</b></div>
+      <p>Planejamento inteligente para conquistar imóveis, veículos e motos sem juros.</p>
+      <div class="socials"><span>◎</span><span>f</span><span>◉</span></div>
+    </div>
+    <div><h4>LINKS RÁPIDOS</h4><p data-scroll="inicio">Início</p><p data-scroll="quem-somos">Quem Somos</p><p data-scroll="como-funciona">Como Funciona</p><p data-scroll="simulacao">Simulação</p></div>
+    <div><h4>CONTATO</h4><p>☎ (11) 4000-1234</p><p>◉ (11) 99999-1234</p><p>✉ contato@verticeconsorcios.com.br</p><p>⌖ Av. Paulista, 1000 — São Paulo, SP</p></div>
+    <div><h4>LOCALIZAÇÃO</h4><div class="map-placeholder">⌖</div></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Vértice Consórcios. Todos os direitos reservados.</div>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <div class="modal-head"><button id="closeModal">×</button><small>🔒 DADOS PROTEGIDOS</small><h3 id="modalTitle">Falta pouco para ver sua simulação</h3><p id="modalSubtitle"></p></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
